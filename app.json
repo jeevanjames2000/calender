@@ -12,17 +12,26 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+      "googleServicesFile": "./google-services.json",
+      "package": "com.jeevansekhar.calender"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "schema": "calender",
+    "extra": {
+      "eas": {
+        "projectId": "9b114511-82fc-4525-a6c1-045bdae040f5"
+      }
+    },
+    "plugins": ["@react-native-google-signin/google-signin"],
+    "ios": {
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "google": {
+      "androidClientId": "281834706725-pjmcmkmdo7hjk9m3qpec26iitnn922mp.apps.googleusercontent.com",
+      "webClientId": "YOUR_WEB_CLIENT_ID"
     }
   }
 }
